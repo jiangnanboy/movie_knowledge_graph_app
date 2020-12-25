@@ -128,6 +128,7 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     
     (3).分类模型有很多，这里使用pytorch中的前馈网络进行分类训练
         训练代码：intent_classification\pytorch\feedforward_network\train.ipynb
+        
         预测代码：intent_classification\pytorch\feedforward_network\predict.ipynb
  
     2.将识别的意图转为cypher语言，在neo4j中进行查询得到答案
@@ -141,6 +142,7 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     4.增加多轮对话功能
     5.增加闲聊功能
     ...
+    
     作者的qq，如有想法可以和作者联系：2229029156
     如果您支持作者继续开发更加完善的功能，请动一动手为此项目打个星或fork此项目，这是对作者最大的鼓励，
     或者可以请作者喝杯奶茶，让他提提神，叫他赶紧起来继续搬砖，在些非常感谢！
