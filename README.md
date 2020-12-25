@@ -1,7 +1,7 @@
 # 基于neo4j,django,pytorch,py2neo的电影图谱及问答
     功能主要包括实体识别、实体查询、关系查询以及问答几个模块。
     项目中用到的数据来自网上公开数据集
-    前端页面参考：https://github.com/qq547276542/Agriculture_KnowledgeGraph，在此非常感谢。
+    前端页面参考：https://github.com/qq547276542/Agriculture_KnowledgeGraph，在此表示非常感谢。
     
 ## 准备及构建实体及关系
 note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data/relation放入neo4j安装目录下import文件夹下：
@@ -143,9 +143,9 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     5.增加闲聊功能
     ...
     
-    作者的qq，如有想法可以和作者联系：2229029156
-    如果您支持作者继续开发更加完善的功能，请动一动手为此项目打个星或fork此项目，这是对作者最大的鼓励，
-    或者可以请作者喝杯奶茶，让他提提神，叫他赶紧起来继续搬砖，在些非常感谢！
+    作者的qq，如您有什么想法可以和作者联系：2229029156
+    如果您支持作者继续开发更加完善的功能，请动一动手为此项目打个星吧或fork此项目，这是对作者最大的鼓励，
+    或者可以请作者喝杯奶茶，让他提提神，叫他赶紧起来继续搬砖，最后在此非常感谢！
 ![image](https://raw.githubusercontent.com/jiangnanboy/movie_knowledge_graph_app/master/img/wechat.png)
 
 ### Requirements
