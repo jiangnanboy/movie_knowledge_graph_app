@@ -154,4 +154,5 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
 ### References
 * https://github.com/jiangnanboy/movie_kg
 * https://github.com/qq547276542/Agriculture_KnowledgeGraph
+* https://github.com/jiangnanboy/chatbot
     
