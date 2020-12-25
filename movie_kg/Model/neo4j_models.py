@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
 from py2neo import Graph,Node,Relationship,NodeMatcher
 
-class Entity():
-    '''
-    知识点
-    '''
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
-
 class Neo4j_Handle():
 	graph = None
 	matcher = None

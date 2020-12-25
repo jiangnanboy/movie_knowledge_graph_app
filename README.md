@@ -1,4 +1,4 @@
-# 基于neo4j,django,pytorch,py2neo的电影图谱
+# 基于neo4j,django,pytorch,py2neo的电影图谱及问答
     功能主要包括实体识别、实体查询、关系查询以及问答几个模块。
     项目中用到的数据来自网上公开数据集
     前端页面参考：https://github.com/qq547276542/Agriculture_KnowledgeGraph，在此非常感谢。
