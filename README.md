@@ -145,7 +145,7 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     
     作者的qq，如您有什么想法可以和作者联系：2229029156
     如果您支持作者继续开发更加完善的功能，请动一动手为此项目打个星吧或fork此项目，这是对作者最大的鼓励，
-    或者可以请作者喝杯奶茶，让他提提神，叫他赶紧起来继续搬砖，最后在此非常感谢！
+    或者可以请作者喝杯奶茶，让他提提神，叫他赶紧起来继续搬砖，最后在此非常感谢！以下二维码是微信支付。
 ![image](https://raw.githubusercontent.com/jiangnanboy/movie_knowledge_graph_app/master/img/wechat.png)
 
 ### Requirements
