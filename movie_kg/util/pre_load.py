@@ -7,6 +7,7 @@ import torch.nn as nn
 import pickle
 import os
 
+# 初始化模型
 def init_model():
     words_path = os.path.join(os.getcwd() + '/util', 'words.pkl')
     with open(words_path, 'rb') as f_words:
@@ -22,6 +23,7 @@ def init_model():
 
     index_classes = dict(zip(classes_index.keys(), classes_index.values()))
 
+    # 定义分类模型
     class classifyModel(nn.Module):
 
         def __init__(self):
@@ -42,18 +44,22 @@ def init_model():
 
     model = classifyModel()
     model_path = os.path.join(os.getcwd() + '/util', "chatbot_model.h5")
+    # 加载训练好的模型
     model.load_state_dict(torch.load(model_path))
     return model, words, classes, index_classes
 
+# 初始化pyhanlp
 def init_hanlp():
     segment = HanLP.newSegment().enableNameRecognize(True).enableOrganizationRecognize(True).enablePlaceRecognize(True).enableCustomDictionaryForcing(True)
     return segment
 
+# 初始化neo4j
 def init_neo4j():
     neo4jconn = Neo4j_Handle()
     neo4jconn.connectNeo4j()
     return neo4jconn
 
+# 加载演员名和电影名
 def init_name_dict():
     root = os.path.abspath(os.path.join(os.getcwd(), ".."))
     actor_path = os.path.join(root, 'data/custom_dict/演员名dict.txt')
@@ -72,6 +78,7 @@ def init_name_dict():
 
     return actor_name_dict, movie_name_dict
 
+# 加载电影类型名
 def init_category_dict():
     root = os.path.abspath(os.path.join(os.getcwd(), ".."))
     movie_category_path = os.path.join(root, 'data/custom_dict/电影类型dict.txt')
