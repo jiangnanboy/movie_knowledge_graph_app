@@ -43,7 +43,7 @@ def init_model():
 
 
     model = classifyModel()
-    model_path = os.path.join(os.getcwd() + '/util', "chatbot_model.h5")
+    model_path = os.path.join(os.getcwd() + '/util', "model.h5")
     # 加载训练好的模型
     model.load_state_dict(torch.load(model_path))
     return model, words, classes, index_classes
