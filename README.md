@@ -126,7 +126,7 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     
     (2).总共16个意图类别，见目录 intent_classification\classification_data\question_classification.txt
     
-    (3).分类模型有很多，这里使用pytorch中的前馈网络进行分类训练
+    (3).分类模型，这里使用前馈网络进行意图识别
     
         训练代码：intent_classification\pytorch\feedforward_network\train.ipynb
         
