@@ -127,9 +127,18 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     (2).总共16个意图类别，见目录 intent_classification\classification_data\question_classification.txt
     
     (3).分类模型有很多，这里使用pytorch中的前馈网络进行分类训练
+    
         训练代码：intent_classification\pytorch\feedforward_network\train.ipynb
         
         预测代码：intent_classification\pytorch\feedforward_network\predict.ipynb
+        
+    (4).分类模型，这里使用textcnn进行意图识别
+    
+        其中[sgns.sogou.char]使用了sogou的预训练向量可从这里下载(https://github.com/Embedding/Chinese-Word-Vectors)
+        
+        训练代码：intent_classification\pytorch\textcnn\train.ipynb
+        
+        预测代码：intent_classification\pytorch\textcnn\predict.ipynb
  
     2.将识别的意图转为cypher语言，在neo4j中进行查询得到答案
         利用分类模型预测用户提问的意图类别，将不同的意图类别转换为不同的cypher语言，从neo4j中查询得到答案。
