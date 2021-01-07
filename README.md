@@ -105,6 +105,10 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
 
 ## 功能模块
 
+本地启动命令：python manage.py runserver (或 movie_kg\run.bat)
+
+打开：http://127.0.0.1:8000/
+
 ### 一.实体实别
     主要识别人物、地名、机构、电影名以及明星名
 ![image](https://raw.githubusercontent.com/jiangnanboy/movie_knowledge_graph_app/master/img/ner.png)
