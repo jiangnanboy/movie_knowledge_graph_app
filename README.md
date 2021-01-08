@@ -143,8 +143,10 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
         训练代码：intent_classification\pytorch\textcnn\train.ipynb
         
         预测代码：intent_classification\pytorch\textcnn\predict.ipynb
- 
-    2.将识别的意图转为cypher语言，在neo4j中进行查询得到答案
+    
+    2.意图识别后，有一个slot filling(即槽填充)，这里采用词典形式进行槽填充(即将电影名，演员名等加入pyhanlp的词典中)，利用pyhanlp进行实体识别(槽填充)。
+    
+    3.将识别的意图以及提取的槽位(即识别的实体)转为cypher语言，在neo4j中进行查询得到答案
         利用分类模型预测用户提问的意图类别，将不同的意图类别转换为不同的cypher语言，从neo4j中查询得到答案。
 ![image](https://raw.githubusercontent.com/jiangnanboy/movie_knowledge_graph_app/master/img/qa.png)
 
