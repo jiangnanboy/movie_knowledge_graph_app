@@ -3,9 +3,23 @@
     项目中用到的数据来自网上公开数据集
     前端页面参考：https://github.com/qq547276542/Agriculture_KnowledgeGraph，在此表示非常感谢。
     
-## 准备及构建实体及关系
+## 准备数据及构建实体及关系
 note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data/relation放入neo4j安装目录下import文件夹下：
 
+
+    三类实体(节点)：
+    实体类型 	数据文件 	数量 	说明
+    Movie 	        Movie.csv 	4587 	电影实体
+    Person 	        Person.csv 	22937 	人员实体
+    Country 	Country.csv 	84 	国家实体
+    
+    四类关系：
+    关系类型 	主语实体类型 	宾语实体类型 	数据文件 	数量 	说明
+    ACTOR 	            Movie 	    Person 	actor.csv 	35257 	电影的主演
+    COMPOSER 	    Movie 	    Person 	composer.csv 	8345 	电影的编剧
+    DIRECTOR 	    Movie 	    Person 	director.csv 	5015 	电影的导演
+    DISTRICT 	    Movie 	    Country 	district.csv 	6227 	电影的制片国家/地区
+    
 ### 一.为id创建唯一索引
 
     1.create constraint on (c:Country) assert c.id is unique
