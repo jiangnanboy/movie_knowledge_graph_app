@@ -144,19 +144,29 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
     
     (2).总共16个意图类别，见目录 intent_classification\classification_data\question_classification.txt
     
-    (3).分类模型，这里使用前馈网络进行意图识别
+    (3).意图识别
+    
+        a.分类模型1，这里使用前馈网络进行意图识别
     
         训练代码：intent_classification\pytorch\feedforward_network\train.ipynb
         
         预测代码：intent_classification\pytorch\feedforward_network\predict.ipynb
         
-    (4).分类模型，这里使用textcnn进行意图识别
+        b.分类模型2，这里使用textcnn进行意图识别
     
         其中[sgns.sogou.char]使用了sogou的预训练向量可从这里下载(https://github.com/Embedding/Chinese-Word-Vectors)
         
         训练代码：intent_classification\pytorch\textcnn\train.ipynb
         
         预测代码：intent_classification\pytorch\textcnn\predict.ipynb
+        
+        c.分类模型3，这里使用textrnn进行意图识别
+    
+        其中[sgns.sogou.char]使用了sogou的预训练向量可从这里下载(https://github.com/Embedding/Chinese-Word-Vectors)
+        
+        训练代码：intent_classification\pytorch\textrnn\train.ipynb
+        
+        预测代码：intent_classification\pytorch\textrnn\predict.ipynb
     
     2.意图识别后，有一个slot filling(即槽填充)，这里采用词典形式进行槽填充(即将电影名，演员名等加入pyhanlp的词典中)，利用pyhanlp进行实体识别(槽填充)。
     
