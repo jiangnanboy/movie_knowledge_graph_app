@@ -167,6 +167,14 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
         训练代码：intent_classification\pytorch\textrnn\train.ipynb
         
         预测代码：intent_classification\pytorch\textrnn\predict.ipynb
+        
+        d.分类模型4，这里使用textrcnn进行意图识别
+    
+        其中[sgns.sogou.char]使用了sogou的预训练向量可从这里下载(https://github.com/Embedding/Chinese-Word-Vectors)
+        
+        训练代码：intent_classification\pytorch\textrcnn\train.ipynb
+        
+        预测代码：intent_classification\pytorch\textrcnn\predict.ipynb
     
     2.意图识别后，有一个slot filling(即槽填充)，这里采用词典形式进行槽填充(即将电影名，演员名等加入pyhanlp的词典中)，利用pyhanlp进行实体识别(槽填充)。
     
@@ -176,7 +184,7 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
 
 ### 后续......
     1.利用pytorch的深度模型做实体识别
-    2.增加更多训练数据，尝试利用其它深度模型作意图识别，如textcnn(已增加)，bert等
+    2.增加更多训练数据，尝试利用其它深度模型作意图识别，如textcnn，bert等
     3.增加一个页面，给一篇关于电影的新闻，利用深度模型自动抽取实体和关系，并图谱化展示
     4.增加多轮对话功能
     5.增加闲聊功能
