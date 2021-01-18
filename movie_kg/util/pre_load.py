@@ -98,7 +98,7 @@ segment = init_hanlp()
 # 初始化
 neo4jconn = init_neo4j()
 
-# 初始化学科名
+# 初始化演员名和电影名
 name_dict = init_name_dict()
 
 # 初始化分类模型，词典等
