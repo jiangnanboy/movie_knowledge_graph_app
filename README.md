@@ -202,3 +202,12 @@ note:以下数据导入是在Neo4j控制台上完成，将数据data/node与data
 * https://github.com/qq547276542/Agriculture_KnowledgeGraph
 * https://github.com/jiangnanboy/chatbot
     
+### contact
+
+如有搜索、推荐、nlp以及大数据挖掘等问题或合作，可联系我：
+
+1、我的github项目介绍：https://github.com/jiangnanboy
+
+2、我的博客园技术博客：https://www.cnblogs.com/little-horse/
+
+3、我的QQ号:2229029156
